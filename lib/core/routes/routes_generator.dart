@@ -1,5 +1,8 @@
 import 'package:alawaly_app/feature/auth/presentation/views/sign_up_view.dart';
 import 'package:alawaly_app/feature/home/presentation/views/home_view.dart';
+import 'package:alawaly_app/feature/profile/presentation/views/profile_view.dart';
+import 'package:alawaly_app/feature/search/presentation/views/advanced_research_view.dart';
+import 'package:alawaly_app/feature/search/presentation/views/search_view.dart';
 import 'package:alawaly_app/feature/splash/views/splash_view.dart';
 import 'package:alawaly_app/core/routes/routes.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +23,21 @@ class RoutesGenerator {
       case PageRouteName.homeRoute:
         return MaterialPageRoute(
           builder: (context) => HomeView(),
+          settings: settings,
+        );
+      case PageRouteName.searchRoute:
+        return MaterialPageRoute(
+          builder: (context) => SearchView(),
+          settings: settings,
+        );
+      case PageRouteName.advancedResearchRoute:
+        return MaterialPageRoute(
+          builder: (context) => AdvancedResearchView(),
+          settings: settings,
+        );
+      case PageRouteName.profileRoute:
+        return MaterialPageRoute(
+          builder: (context) => ProfileView(),
           settings: settings,
         );
       // case PageRouteName.signUpSellerRoute:
