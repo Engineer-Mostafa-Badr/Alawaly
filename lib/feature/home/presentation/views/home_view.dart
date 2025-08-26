@@ -1,9 +1,9 @@
 import 'package:alawaly_app/core/custom_widget/app_text_manager.dart';
 import 'package:alawaly_app/core/resources/app_assets_manager.dart';
 import 'package:alawaly_app/core/resources/app_color_manager.dart';
-import 'package:alawaly_app/core/routes/routes.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:alawaly_app/core/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -174,13 +174,21 @@ class HomeView extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 1.h),
-              SizedBox(
-                height: 33.h,
-                child: ListView.builder(
-                  reverse: true,
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 5,
-                  itemBuilder: (context, index) => _buildProjectCard(),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(
+                    context,
+                    PageRouteName.productDetailsRoute,
+                  );
+                },
+                child: SizedBox(
+                  height: 33.h,
+                  child: ListView.builder(
+                    reverse: true,
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 5,
+                    itemBuilder: (context, index) => _buildProjectCard(),
+                  ),
                 ),
               ),
               SizedBox(height: 2.h),
@@ -217,13 +225,18 @@ class HomeView extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 2.h),
-              SizedBox(
-                height: 33.h,
-                child: ListView.builder(
-                  reverse: true,
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 5,
-                  itemBuilder: (context, index) => _buildUnitCard(),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, PageRouteName.unitDetailsRoute);
+                },
+                child: SizedBox(
+                  height: 33.h,
+                  child: ListView.builder(
+                    reverse: true,
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 5,
+                    itemBuilder: (context, index) => _buildUnitCard(),
+                  ),
                 ),
               ),
               SizedBox(height: 2.h),

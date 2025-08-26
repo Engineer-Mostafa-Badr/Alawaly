@@ -5,26 +5,15 @@ class PageRouteName {
   static const String searchRoute = '/search';
   static const String advancedResearchRoute = '/advanced_research';
   static const String profileRoute = '/profile';
+  static const String interviewAppointmentRoute = '/interview_appointment';
+  static const String favoriteRoute = '/favorite';
+  static const String productDetailsRoute = '/product_details';
+  static const String unitDetailsRoute = '/unit_details';
+  static const String mortgageCalculatorRoute = '/mortgage_calculator';
+  static const String notificationsRoute = '/notifications';
+  static const String dashboardRoute = '/dashboard';
+  static const String contactAdminRoute = '/contact_admin';
+  static const String unitTrackingDetailsRoute = '/unit_tracking_details';
+  static const String createArealEstateMarketerAccountRoute =
+      '/create_areal_estate_marketer_account';
 }
-  // static const String signUpSellerRoute = '/sign_up_seller';
-  // static const String signUpUserRoute = '/sign_up_user';
-  // static const String homeUserRoute = '/homeUser';
-  // static const String homeSellerRoute = '/homeSeller';
-  // static const String activateRoute = '/activate';
-  // static const String enterOTPRoute = '/enter_otp';
-  // static const String onBoardingOneRoute = '/on_boarding_one';
-  // static const String onBoardingTwoRoute = '/on_boarding_two';
-  // static const String onBoardingThreeRoute = '/on_boarding_three';
-  // static const String profileRoute = '/profile';
-  // static const String editProfileRoute = '/edit_profile';
-  // static const String profileOptionsRoute = '/profile_options';
-  // static const String favoriteRoute = '/favorite';
-  // static const String paymentRoute = '/payment';
-  // static const String forgotPasswordRoute = '/forgot_password';
-  // static const String productRoute = '/product';
-  // static const String changePasswordChooseMethodRoute =
-  //     '/change_password_choose_method';
-  // static const String changePasswordRoute = '/change_password';
-  // static const String chatRoute = '/chat';
-  // static const String stateRoute = '/state';
-// }

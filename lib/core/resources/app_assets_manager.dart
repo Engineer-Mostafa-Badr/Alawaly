@@ -8,6 +8,9 @@ abstract class AppAssetsManager {
   static const String originalImgPhoto = 'assets/images/Original Image.png';
   static const String frame4Photo = 'assets/images/FRAME4.png';
   static const String frame5Photo = 'assets/images/81.png';
+  static const String favoritePhoto = 'assets/images/favorite.png';
+  static const String frame6Photo = 'assets/images/FRAME5.png';
+  static const String productPhoto = 'assets/images/product.png';
   static const String untitledPhoto =
       'assets/images/Picture → Untitled-15-05.jpg.png';
 }
@@ -21,6 +24,7 @@ abstract class AppSvgAssetsManager {
   static const String heart2Icon = 'assets/svg/heart2.svg';
   static const String homeIcon = 'assets/svg/Home.svg';
   static const String homeIcon2 = 'assets/svg/Home2.svg';
+  static const String homeIcon3 = 'assets/svg/Home3.svg';
   static const String locationIcon = 'assets/svg/location.svg';
   static const String moreIcon = 'assets/svg/more.svg';
   static const String notificationIcon = 'assets/svg/notification.svg';
@@ -29,4 +33,9 @@ abstract class AppSvgAssetsManager {
   static const String tagIcon = 'assets/svg/tag-2.svg';
   static const String wappGPTLogo = 'assets/svg/WappGPT - logo.svg';
   static const String rectangleIcon = 'assets/svg/Rectangle 4346.svg';
+  static const String bookIcon = 'assets/svg/Book.svg';
+  static const String messageIcon = 'assets/svg/Message.svg';
+  static const String notificationIcon2 = 'assets/svg/notification2.svg';
+  static const String peopleIcon = 'assets/svg/people.svg';
+  static const String settingIcon = 'assets/svg/Setting.svg';
 }
