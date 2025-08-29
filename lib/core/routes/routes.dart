@@ -14,6 +14,7 @@ class PageRouteName {
   static const String dashboardRoute = '/dashboard';
   static const String contactAdminRoute = '/contact_admin';
   static const String unitTrackingDetailsRoute = '/unit_tracking_details';
+  static const String produtsRoute = '/products';
   static const String createArealEstateMarketerAccountRoute =
       '/create_areal_estate_marketer_account';
 }
