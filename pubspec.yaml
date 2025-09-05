@@ -42,6 +42,7 @@ dependencies:
   carousel_slider: ^5.1.1
   percent_indicator: ^4.2.5
   google_fonts: ^6.3.0
+  google_maps_flutter: ^2.13.1
 
 dev_dependencies:
   flutter_test:
@@ -102,7 +103,25 @@ flutter:
         - asset: assets/fonts/Effra_Trial/Effra_Trial_Rg.ttf
         - asset: assets/fonts/Effra_Trial/Effra_Trial_SBd.ttf
         - asset: assets/fonts/Effra_Trial/Effra_Trial_XBd.ttf
-          style: italic
+
+    - family: Tajawal
+
+      fonts:
+        - asset: assets/fonts/Tajawal/Tajawal-Black.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-Bold.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-ExtraBold.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-Medium.ttf
+        - asset: assets/fonts/Tajawal/Tajawal-Regular.ttf
+
+    - family: KFNL
+
+      fonts:
+        - asset: assets/fonts/KFNL/KFNL Regular.ttf
+        # - asset: assets/fonts/Tajawal/Tajawal-Bold.ttf
+        # - asset: assets/fonts/Tajawal/Tajawal-ExtraBold.ttf
+        # - asset: assets/fonts/Tajawal/Tajawal-Medium.ttf
+        # - asset: assets/fonts/Tajawal/Tajawal-Regular.ttf
+
     # - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

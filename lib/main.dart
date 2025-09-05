@@ -1,7 +1,5 @@
 import 'package:alawaly_app/core/routes/routes_generator.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:alawaly_app/core/routes/routes.dart';
-import 'package:flutter/material.dart';
+import '../../../../../core/resources/app_imports.dart';
 
 void main() {
   runApp(const MyApp());

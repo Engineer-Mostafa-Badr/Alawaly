@@ -7,6 +7,7 @@ import 'package:alawaly_app/feature/product/presentation/views/product_details_v
 import 'package:alawaly_app/feature/profile/presentation/views/notifications_view.dart';
 import 'package:alawaly_app/feature/profile/presentation/views/contact_admin_view.dart';
 import 'package:alawaly_app/feature/product/presentation/views/unit_details_view.dart';
+import 'package:alawaly_app/feature/product/presentation/views/search_maps_view.dart';
 import 'package:alawaly_app/feature/profile/presentation/views/dashboard_view.dart';
 import 'package:alawaly_app/feature/product/presentation/views/products_view.dart';
 import 'package:alawaly_app/feature/profile/presentation/views/favorite_view.dart';
@@ -101,9 +102,14 @@ class RoutesGenerator {
           builder: (context) => UnitTrackingDetailsView(),
           settings: settings,
         );
-      case PageRouteName.produtsRoute:
+      case PageRouteName.productsRoute:
         return MaterialPageRoute(
           builder: (context) => ProductsView(),
+          settings: settings,
+        );
+      case PageRouteName.mapsRoute:
+        return MaterialPageRoute(
+          builder: (context) => const SearchMapsView(),
           settings: settings,
         );
       default:

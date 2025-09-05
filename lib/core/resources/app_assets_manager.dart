@@ -16,7 +16,8 @@ abstract class AppAssetsManager {
 }
 
 abstract class AppSvgAssetsManager {
-  static const String splashPhoto = 'assets/svg/Logo.svg';
+  static const String splashPhoto =
+      'assets/svg/FreeSample-Vectorizer-io-logo.svg';
   static const String alawalyLogo = 'assets/svg/Alawaly-Logo.svg';
   static const String clockIcon = 'assets/svg/clock.svg';
   static const String gradientMaskGroup = 'assets/svg/Gradient Mask Group.svg';
@@ -38,4 +39,15 @@ abstract class AppSvgAssetsManager {
   static const String notificationIcon2 = 'assets/svg/notification2.svg';
   static const String peopleIcon = 'assets/svg/people.svg';
   static const String settingIcon = 'assets/svg/Setting.svg';
+  static const String logoIcon = 'assets/svg/logo_resized.svg';
+  static const String lineIcon = 'assets/svg/Line.svg';
+  static const String allIcon = 'assets/svg/all.svg';
+  static const String mapsIcon = 'assets/svg/Mask group.svg';
+  static const String preferenceHorizontalIcon =
+      'assets/svg/preference-horizontal.svg';
+  static const String projectsIcon = 'assets/svg/projects.svg';
+  static const String searchIcon = 'assets/svg/Search.svg';
+  static const String scaleDownIcon = 'assets/svg/scale down.svg';
+  static const String errorIcon = 'assets/svg/error.svg';
+  static const String reyalIcon = 'assets/svg/Reyal.svg';
 }

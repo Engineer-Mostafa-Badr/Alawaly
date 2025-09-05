@@ -148,7 +148,7 @@ class SearchView extends StatelessWidget {
         children: [
           // صورة
           Image.asset(
-            AppAssetsManager.frame4Photo,
+            AppAssetsManager.frame3Photo,
             height: double.infinity,
             width: double.infinity,
             fit: BoxFit.cover,
