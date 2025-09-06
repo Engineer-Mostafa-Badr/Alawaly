@@ -11,6 +11,7 @@ class CustomBottomNavBar extends StatelessWidget {
   final double circleRadius = 30;
   final Color circleColor = ColorManager.lightGrey;
   final Color iconSelectedColor = ColorManager.white;
+  // TODO: Use theme data.
   final double iconSelectedSize = 28;
   final double iconUnselectedSize = 22;
   final double circleElevation = 6;
@@ -21,6 +22,8 @@ class CustomBottomNavBar extends StatelessWidget {
     required this.onItemSelected,
   });
 
+
+  // TODO: USE Localzation to Applity to add more one lang.
   static const List<String> _labels = [
     'المزيد',
     'حسابي',

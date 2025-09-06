@@ -8,6 +8,23 @@ class NewsCardWidget extends StatelessWidget {
   final String imageUrl;
   final String date;
 
+
+  // TODO: Here You Must Using Object. becouse Parameters gt 3.
+  /**
+  in feature/home/models/[Model Name].dart
+  add class [Model Name].
+  2. instance of [Model Name] Is Param Here.
+  Like that ->
+
+  `
+  final [Model Name] newsItem;
+  const NewsCardWidget({
+    super.key,
+    this.unitInfo = newsItem,
+   
+  });
+  `
+   */
   const NewsCardWidget({
     super.key,
     required this.title,
@@ -43,6 +60,10 @@ class NewsCardWidget extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
+                // TODO: Use Theme Data To get Font Size, Font Weight and Font Family.
+                // Why: Maybe The Font Will By Change And Font Size From Mobile Setting. this not Prodactive Way To Create App.
+                // Theme.of(context).TextTheme..[Large, medim,small.......].
+                // or Theme.of(context).TextTheme.CopyWith(.....)..[Large, medim,small.......].
                 AppText(
                   text: title,
                   fontSize: 16.px,

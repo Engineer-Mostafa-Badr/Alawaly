@@ -13,6 +13,23 @@ class UnitCardWidget extends StatelessWidget {
   final String area;
   final String price;
 
+
+  // TODO: Here You Must Using Object. becouse Parameters gt 3.
+  /**
+  in feature/home/models/[Model Name].dart
+  add class [Model Name].
+  2. instance of [Model Name] Is Param Here.
+  Like that ->
+
+  `
+  final [Model Name] unitInfo;
+  const UnitCardWidget({
+    super.key,
+    this.unitInfo = unitInfo,
+   
+  });
+  `
+   */
   const UnitCardWidget({
     super.key,
     this.imagePath = AppAssetsManager.imgPhoto,
