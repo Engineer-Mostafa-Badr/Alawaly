@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ## Dear @Engineer-Mostafa-Badr
-### I HAve been add some commets in feature/home/presentation/components you can check it.
+### I Have been added some commets in feature/home/presentation/components you can check it.
 #### I Cann't review all application and set comments in issues.
 
 
