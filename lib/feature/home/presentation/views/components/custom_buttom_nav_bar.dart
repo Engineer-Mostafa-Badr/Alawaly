@@ -22,7 +22,6 @@ class CustomBottomNavBar extends StatelessWidget {
     required this.onItemSelected,
   });
 
-
   // TODO: USE Localzation to Applity to add more one lang.
   static const List<String> _labels = [
     'المزيد',

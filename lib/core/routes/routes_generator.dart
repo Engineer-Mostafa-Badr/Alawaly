@@ -19,6 +19,12 @@ import 'package:alawaly_app/feature/splash/views/splash_view.dart';
 import 'package:alawaly_app/core/routes/routes.dart';
 import 'package:flutter/material.dart';
 
+import '../../feature/home/presentation/views/components/all_news.dart';
+import '../../feature/home/presentation/views/components/all_offers.dart';
+import '../../feature/home/presentation/views/components/all_properties.dart';
+import '../../feature/home/presentation/views/components/view_all.dart';
+import '../../feature/home/presentation/views/components/view_details_view.dart';
+
 class RoutesGenerator {
   static Route<dynamic> onGenerateRoutes(RouteSettings settings) {
     switch (settings.name) {
@@ -110,6 +116,31 @@ class RoutesGenerator {
       case PageRouteName.mapsRoute:
         return MaterialPageRoute(
           builder: (context) => const SearchMapsView(),
+          settings: settings,
+        );
+      case PageRouteName.viewDetailsRoute:
+        return MaterialPageRoute(
+          builder: (context) => const ViewDetailsView(),
+          settings: settings,
+        );
+      case PageRouteName.viewAllRoute:
+        return MaterialPageRoute(
+          builder: (context) => const ViewAll(),
+          settings: settings,
+        );
+      case PageRouteName.allPropertiesRoute:
+        return MaterialPageRoute(
+          builder: (context) => const AllProperties(),
+          settings: settings,
+        );
+      case PageRouteName.allNewsRoute:
+        return MaterialPageRoute(
+          builder: (context) => const AllNews(),
+          settings: settings,
+        );
+      case PageRouteName.allOffersRoute:
+        return MaterialPageRoute(
+          builder: (context) => const AllOffers(),
           settings: settings,
         );
       default:

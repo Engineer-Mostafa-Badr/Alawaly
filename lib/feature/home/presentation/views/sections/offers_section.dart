@@ -13,7 +13,12 @@ class OffersSection extends StatelessWidget {
         SectionsHeader(
           title: "عروض تسويقية",
           actionText: "جميع العروض",
-          onActionTap: () {},
+          onActionTap: () {
+            Navigator.pushReplacementNamed(
+              context,
+              PageRouteName.allOffersRoute,
+            );
+          },
         ),
         SizedBox(height: 2.h),
         CustomScrollList(

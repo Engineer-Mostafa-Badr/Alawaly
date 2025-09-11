@@ -8,7 +8,6 @@ class NewsCardWidget extends StatelessWidget {
   final String imageUrl;
   final String date;
 
-
   // TODO: Here You Must Using Object. becouse Parameters gt 3.
   /**
   in feature/home/models/[Model Name].dart
@@ -85,7 +84,12 @@ class NewsCardWidget extends StatelessWidget {
                   children: [
                     SizedBox(width: 2.w),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushReplacementNamed(
+                          context,
+                          PageRouteName.viewDetailsRoute,
+                        );
+                      },
                       child: AppText(
                         text: bottomTitle,
                         fontSize: 14.px,

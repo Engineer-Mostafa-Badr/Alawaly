@@ -11,7 +11,9 @@ class RecommendationsSection extends StatelessWidget {
         SectionsHeader(
           title: "التوصيات العقارية",
           actionText: "جميع الاخبار",
-          onActionTap: () {},
+          onActionTap: () {
+            Navigator.pushReplacementNamed(context, PageRouteName.allNewsRoute);
+          },
         ),
         SizedBox(height: 10.h),
       ],

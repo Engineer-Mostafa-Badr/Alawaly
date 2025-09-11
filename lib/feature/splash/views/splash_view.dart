@@ -48,7 +48,7 @@ class _SplashViewState extends State<SplashView>
         child: ScaleTransition(
           scale: _animation,
           child: SvgPicture.asset(
-            AppSvgAssetsManager.splashPhoto,
+            AppSvgAssetsManager.splashLogo,
             width: 150,
             height: 150,
           ),

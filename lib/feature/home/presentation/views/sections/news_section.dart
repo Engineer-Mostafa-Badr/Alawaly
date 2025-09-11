@@ -12,7 +12,9 @@ class NewsSection extends StatelessWidget {
         SectionsHeader(
           title: "آخر الاخبار",
           actionText: "جميع الاخبار",
-          onActionTap: () {},
+          onActionTap: () {
+            Navigator.pushReplacementNamed(context, PageRouteName.allNewsRoute);
+          },
         ),
         SizedBox(height: 2.h),
         NewsCardWidget(

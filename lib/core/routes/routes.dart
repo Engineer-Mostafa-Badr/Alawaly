@@ -16,6 +16,11 @@ class PageRouteName {
   static const String unitTrackingDetailsRoute = '/unit_tracking_details';
   static const String productsRoute = '/products';
   static const String mapsRoute = '/maps';
+  static const String viewDetailsRoute = '/view_details';
+  static const String viewAllRoute = '/view_all';
+  static const String allPropertiesRoute = '/all_properties';
+  static const String allNewsRoute = '/all_news';
+  static const String allOffersRoute = '/all_offers';
   static const String createArealEstateMarketerAccountRoute =
       '/create_areal_estate_marketer_account';
 }

@@ -11,13 +11,15 @@ abstract class AppAssetsManager {
   static const String favoritePhoto = 'assets/images/favorite.png';
   static const String frame6Photo = 'assets/images/FRAME5.png';
   static const String productPhoto = 'assets/images/product.png';
+  static const String homePhoto = 'assets/images/home_photo.jpg';
   static const String untitledPhoto =
       'assets/images/Picture → Untitled-15-05.jpg.png';
 }
 
 abstract class AppSvgAssetsManager {
-  static const String splashPhoto =
-      'assets/svg/FreeSample-Vectorizer-io-logo.svg';
+  static const String splashLogo =
+      'assets/svg/مؤسسة إتحاد الخليج للمقاولات-01.svg';
+  static const String homeLogo = 'assets/svg/logo.svg';
   static const String alawalyLogo = 'assets/svg/Alawaly-Logo.svg';
   static const String clockIcon = 'assets/svg/clock.svg';
   static const String gradientMaskGroup = 'assets/svg/Gradient Mask Group.svg';
@@ -50,4 +52,5 @@ abstract class AppSvgAssetsManager {
   static const String scaleDownIcon = 'assets/svg/scale down.svg';
   static const String errorIcon = 'assets/svg/error.svg';
   static const String reyalIcon = 'assets/svg/Reyal.svg';
+  static const String shareIcon = 'assets/svg/Share.svg';
 }

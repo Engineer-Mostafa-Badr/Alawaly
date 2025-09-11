@@ -3,15 +3,14 @@ import '../../../profile/presentation/views/favorite_view.dart';
 import '../../../profile/presentation/views/profile_view.dart';
 import '../../../more/presentation/views/more_view.dart';
 import '../../../../../core/resources/app_imports.dart';
+import 'sections/home_header_with_banner_section.dart';
 import 'components/custom_buttom_nav_bar.dart';
 import 'sections/recommendations_section.dart';
 import 'sections/resume_search_section.dart';
-import 'sections/home_banner_section.dart';
 import 'sections/projects_section.dart';
 import 'sections/offers_section.dart';
 import 'sections/units_section.dart';
 import 'sections/news_section.dart';
-import 'sections/home_header.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -77,8 +76,7 @@ class HomeContent extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          const HomeHeader(),
-          const HomeBannerSection(),
+          const HomeHeaderWithBanner(),
           SizedBox(height: 1.h),
           const ProjectsSection(),
           SizedBox(height: 2.h),

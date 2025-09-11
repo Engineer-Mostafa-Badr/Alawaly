@@ -17,6 +17,9 @@ class MyApp extends StatelessWidget {
           title: 'Alawaly',
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            textTheme: TextTheme(
+              titleLarge: TextStyle(fontFamily: "", fontSize: 12),
+            ),
           ),
           initialRoute: PageRouteName.splashRoute,
           onGenerateRoute: RoutesGenerator.onGenerateRoutes,

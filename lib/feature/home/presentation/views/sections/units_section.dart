@@ -13,7 +13,12 @@ class UnitsSection extends StatelessWidget {
         SectionsHeader(
           title: "الوحدات المميزة",
           actionText: "جميع العقارات",
-          onActionTap: () {},
+          onActionTap: () {
+            Navigator.pushReplacementNamed(
+              context,
+              PageRouteName.allPropertiesRoute,
+            );
+          },
         ),
         SizedBox(height: 2.h),
         CustomScrollList(
@@ -22,7 +27,15 @@ class UnitsSection extends StatelessWidget {
           itemCount: 5,
           itemBuilder: (context, index) => Padding(
             padding: EdgeInsets.symmetric(horizontal: 2.w),
-            child: UnitCardWidget(),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pushReplacementNamed(
+                  context,
+                  PageRouteName.productDetailsRoute,
+                );
+              },
+              child: UnitCardWidget(),
+            ),
           ),
           sizeBoxHeight: 33.h,
         ),

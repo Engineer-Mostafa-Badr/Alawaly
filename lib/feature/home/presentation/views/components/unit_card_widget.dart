@@ -13,7 +13,6 @@ class UnitCardWidget extends StatelessWidget {
   final String area;
   final String price;
 
-
   // TODO: Here You Must Using Object. becouse Parameters gt 3.
   /**
   in feature/home/models/[Model Name].dart

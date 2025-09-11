@@ -8,70 +8,9 @@ class SearchView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF5D3A1A), // الخلفية
       body: SafeArea(
         child: Column(
           children: [
-            // AppBar
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: Row(
-                children: [
-                  const Icon(Icons.apartment, color: Colors.white),
-                  const SizedBox(width: 10),
-                  const Icon(Icons.apartment_outlined, color: Colors.white),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Container(
-                      height: 40,
-                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.2),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Row(
-                        children: [
-                          const Icon(Icons.search, color: Colors.white70),
-                          const SizedBox(width: 5),
-                          Expanded(
-                            child: TextField(
-                              decoration: const InputDecoration(
-                                hintText: "البحث بالمنطقة، المشروع...",
-                                hintStyle: TextStyle(
-                                  color: Colors.white70,
-                                  fontSize: 14,
-                                ),
-                                border: InputBorder.none,
-                              ),
-                              style: const TextStyle(color: Colors.white),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-            // فلاتر
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    _buildFilter("المدينة"),
-                    const SizedBox(width: 8),
-                    _buildFilter("نوع الوحدات"),
-                    const SizedBox(width: 8),
-                    _buildFilter("حالة البناء"),
-                  ],
-                ),
-              ),
-            ),
-
-            // الوحدات
             Expanded(
               child: GridView.builder(
                 padding: const EdgeInsets.all(12),
@@ -87,8 +26,6 @@ class SearchView extends StatelessWidget {
                 },
               ),
             ),
-
-            // شريط تحت
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
               color: const Color(0xFF5D3A1A),
@@ -119,34 +56,12 @@ class SearchView extends StatelessWidget {
     );
   }
 
-  // زرار الفلاتر
-  static Widget _buildFilter(String title) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.15),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Row(
-        children: [
-          Text(
-            title,
-            style: const TextStyle(color: Colors.white, fontSize: 14),
-          ),
-          const Icon(Icons.keyboard_arrow_down, color: Colors.white),
-        ],
-      ),
-    );
-  }
-
-  // كارت الوحدة
   static Widget _buildUnitCard() {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       clipBehavior: Clip.hardEdge,
       child: Stack(
         children: [
-          // صورة
           Image.asset(
             AppAssetsManager.frame3Photo,
             height: double.infinity,
@@ -154,7 +69,6 @@ class SearchView extends StatelessWidget {
             fit: BoxFit.cover,
           ),
 
-          // تظليل أسفل
           Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -165,7 +79,6 @@ class SearchView extends StatelessWidget {
             ),
           ),
 
-          // شارة أعلى
           Positioned(
             top: 8,
             right: 8,

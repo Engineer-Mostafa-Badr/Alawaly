@@ -11,6 +11,7 @@ class ProfileView extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Drawer(
+        width: double.infinity,
         backgroundColor: const Color(0xFF111111),
         child: SafeArea(
           child: ListView(

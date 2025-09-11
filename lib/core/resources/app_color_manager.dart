@@ -46,4 +46,18 @@ abstract class ColorManager {
       Color.fromARGB(255, 59, 55, 53),
     ],
   );
+  static const appbarBackground = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Color.fromARGB(255, 95, 89, 89), Color.fromARGB(255, 95, 89, 89)],
+  );
+  static const cardBackground = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [
+      Color.fromARGB(180, 114, 102, 102),
+      Colors.transparent,
+      Color.fromARGB(180, 68, 45, 37),
+    ],
+  );
 }
