@@ -1,25 +1,70 @@
-# alawaly_app
+# العوالي لبيع المنتجات(Alawaly)
 
-A new Flutter project.
+Alawaly هو تطبيق متعدد المنصات يربط العملاء بمحتوى الخدمات والمنتجات عبر واجهة سلسة تجمع الشاشة الرئيسية، البحث، الملف الشخصي، والتفاصيل دون الحاجة للخروج من نفس التطبيق. يعتمد على واجهات متجاوبة لجميع المقاسات ويستخدم خطوط عربية مخصصة ليحافظ على هوية بصرية موحدة.
 
-## Getting Started
+## 📱 المميزات الرئيسية
 
-This project is a starting point for a Flutter application.
+- شاشات تسجيل ودخول مع دعم التحقق بواسطة رمز ومزامنة بيانات المستخدم.
+- شاشة رئيسية تعرض منتجات مميزة، عروض، وسلايدر متفاعل مع المحتوى.
+- تفاصيل المنتج مع إمكانية اختيار الكمية، الإضافة إلى المفضلة، ومتابعة السعر والتقييم.
+- بحث ذكي بمجموعات وتصنيفات لتسهيل إيجاد المنتجات.
+- صفحة الملف الشخصي التي تجمع بيانات العميل، الإعدادات، وتاريخ الطلبات.
+- قسم "المزيد" المتضمن للمزايا الإضافية والروابط السريعة للدعم.
+- دعم تحسين تجربة المستخدم عبر `responsive_sizer`، أيقونات SVG، وخطوط متعددة.
 
-A few resources to get you started if this is your first Flutter project:
+## 🏗️ البنية المعمارية
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+المشروع يتبنى بنية منظمة مع فصل واضح بين طبقات الـ core والـ features، مما يسهل صيانة الكود وتوسيع الوظائف.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+lib/
+├── core/
+│   ├── custom_widget/   # عناصر واجهة قابلة لإعادة الاستخدام (بطاقات، أزرار، لودرز)
+│   ├── helpers/         # مساعدات للـ API، التاريخ، وغيرها
+│   ├── resources/       # ثوابت الألوان، الخطوط، والسمات المشتركة
+│   └── routes/          # توليد المسارات والتوجيه
+└── feature/
+    ├── auth/            # شاشات تسجيل الدخول، التسجيل والتحقق
+    ├── home/            # البوابة الرئيسية، الأقسام، السلايدر
+    ├── more/            # صفحة المزيد والإعدادات
+    ├── product/         # تفاصيل المنتج والتفاعل
+    ├── profile/         # الملف الشخصي وتعديل البيانات
+    ├── search/          # شاشات البحث والفلترة
+    └── splash/          # شاشة البداية والانتقال الأولي
+```
 
+كل قسم يعالج الجانب الخاص به (البيانات، المنطق، العرض) ويعتمد على الموارد المشتركة من `core` للثيمات والتوجيه.
 
+## 🛠️ التقنيات المستخدمة
 
-## Dear @Engineer-Mostafa-Badr
-### I Have been added some commets in feature/home/presentation/components you can check it.
-#### I Cann't review all application and set comments in issues.
+- Flutter 3.8.1+ للتطوير عبر الأنظمة (Android، iOS، web، desktop).
+- `responsive_sizer` لتكييف التخطيطات حسب الأبعاد.
+- `flutter_easyloading` لعرض التقدم والتحميل.
+- `google_fonts` مع عائلات `Effra`, `Tajawal`, `KFNL`.
+- `flutter_svg` لمعالجة الأيقونات المتجهة.
+- `carousel_slider`، `percent_indicator` للتفاعل البصري.
+- `google_maps_flutter` لدعم الخرائط والموفرين القريبين.
+- `flutter_launcher_icons` و`flutter_native_splash` لضبط الأيقونات وشاشات التحميل.
 
+## 📦 التثبيت والبناء
 
-# good luck.
+```bash
+# تنظيف المشروع
+flutter clean
+
+# تثبيت الحزم
+flutter pub get
+
+# تشغيل التطبيق
+flutter run
+
+# بناء إصدار
+flutter build apk --release
+```
+
+## 📝 ملاحظات التطوير
+
+- كل ميزة تقع في مجلد مستقل داخل `feature` مع تركيز على فصل البيانات والمنطق والواجهة.
+- الثوابت (الألوان، الخطوط، النصوص) محفوظة في `core/resources`.
+- الأصول (صور، SVG، خطوط) موجودة في مجلد `assets/` ليتم تحميلها فورًا.
+- استخدم `flutter_test` أو إضافات أخرى للاختبارات عند إضافة ميزات جديدة.
